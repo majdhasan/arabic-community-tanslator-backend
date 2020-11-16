@@ -1,0 +1,29 @@
+{
+  "kind": "collectionType",
+  "collectionName": "solutions",
+  "info": {
+    "name": "Solution"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true
+  },
+  "attributes": {
+    "content": {
+      "type": "text"
+    },
+    "thumbsUp": {
+      "type": "integer"
+    },
+    "thumbsDown": {
+      "type": "integer"
+    },
+    "submitted_by": {
+      "plugin": "users-permissions",
+      "model": "user"
+    },
+    "best_solution": {
+      "type": "boolean"
+    }
+  }
+}
