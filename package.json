@@ -11,20 +11,22 @@
   },
   "devDependencies": {},
   "dependencies": {
+    "dotenv": "^8.2.0",
+    "knex": "<0.20.0",
+    "sqlite3": "latest",
     "strapi": "3.1.5",
     "strapi-admin": "3.1.5",
-    "strapi-utils": "3.1.5",
-    "strapi-plugin-content-type-builder": "3.1.5",
+    "strapi-connector-bookshelf": "3.1.5",
+    "strapi-connector-mongoose": "^3.3.3",
     "strapi-plugin-content-manager": "3.1.5",
-    "strapi-plugin-users-permissions": "3.1.5",
+    "strapi-plugin-content-type-builder": "3.1.5",
     "strapi-plugin-email": "3.1.5",
     "strapi-plugin-upload": "3.1.5",
-    "strapi-connector-bookshelf": "3.1.5",
-    "knex": "<0.20.0",
-    "sqlite3": "latest"
+    "strapi-plugin-users-permissions": "3.1.5",
+    "strapi-utils": "3.1.5"
   },
   "author": {
-    "name": "A Strapi developer"
+    "name": "Majd Hasan"
   },
   "strapi": {
     "uuid": "7202e814-159e-4da4-81a0-6c7cb746f88c"

@@ -1,14 +1,15 @@
 module.exports = ({ env }) => ({
-  defaultConnection: 'default',
+  defaultConnection: "default",
   connections: {
     default: {
-      connector: 'bookshelf',
+      connector: "mongoose",
       settings: {
-        client: 'sqlite',
-        filename: env('DATABASE_FILENAME', '.tmp/data.db'),
+        uri: `mongodb+srv://${env("MONGODBUSER")}:${env(
+          "MONGODBPASS"
+        )}@cluster0.28jr0.mongodb.net/tranlsator?retryWrites=true&w=majority`,
       },
       options: {
-        useNullAsDefault: true,
+        ssl: true,
       },
     },
   },
